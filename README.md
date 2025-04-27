@@ -32,6 +32,12 @@ In covert engagements, preventing external alerts or detection through wireless 
 
 ---
 
+---
+## Tested
+
+This was tested one a Raspberry Pi 4B 8GB in a Home Lab enviornment using Kali linux purple
+
+---
 ## ⚙️ Requirements
 
 ### Python Packages
