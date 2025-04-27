@@ -31,8 +31,6 @@ Although not specifically tested against surveillance cameras, in theory, by des
 In covert engagements, preventing external alerts or detection through wireless channels is critical. Shadow Bubble ELITE allows operators to create an active disruption zone where Bluetooth devices and Wi-Fi-connected infrastructure are severely impaired. This minimizes the risk of real-time notifications, camera feed uploads, or sensor alerts being successfully transmitted outside the compromised environment. All observations have been verified in controlled lab simulations, and operational use should be tailored carefully to match the technical landscape and rules of engagement.
 
 ---
-
----
 ## Tested
 
 This was tested one a Raspberry Pi 4B 8GB in a Home Lab enviornment using Kali linux purple
