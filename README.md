@@ -111,5 +111,5 @@ ShadowDrums and ShadowTEAM members will not be held liable for any misuse of thi
 
 ## 🤝 Credits
 - Built with love for real operators. Stay sharp. 🛡️
-_ Shadowdrums
+- Shadowdrums
 
