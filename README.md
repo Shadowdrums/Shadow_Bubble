@@ -18,7 +18,7 @@ Built for real-world pentesting, defense, and tactical signal control.
 
 ---
 
-##📍 Use Cases
+## 📍 Use Cases
 
 ### Physical Pentesting
 
