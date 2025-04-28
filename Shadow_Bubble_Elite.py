@@ -9,10 +9,9 @@ import time
 import re
 import curses
 import psutil
-import multiprocessing
-from multiprocessing import Process, Manager
+from multiprocessing import Process, Manager as MPManager
 
-manager = multiprocessing.Manager()
+manager = MPManager()
 process_registry = manager.list()
 activity_log = manager.list()
 selected_wifis = []
