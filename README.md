@@ -71,7 +71,7 @@ sudo apt install aircrack-ng mdk4 bluez python3-pip
 2. Ensure your Wi-Fi and Bluetooth adapters are connected.
 3. Start the script:
 ```bash
-sudo python3 Shadow_Bubble_ELITE.py
+sudo python3 Shadow_Bubble_Elite.py
 ```
 
 4. Use the arrow keys and spacebar to **select** Wi-Fi and Bluetooth adapters.
