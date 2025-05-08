@@ -62,13 +62,20 @@ def list_bt_adapters():
 
 def prepare_monitor_mode(adapter):
     log_activity(f"[*] Enabling monitor mode: {adapter}")
-    subprocess.run(f"sudo airmon-ng start {adapter}", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    time.sleep(1)
-    iwconfig_output = run_command(f"iwconfig {adapter}mon")
-    if "Mode:Monitor" not in iwconfig_output:
+    try:
+        subprocess.run(["sudo", "ip", "link", "set", adapter, "down"], check=True)
+        subprocess.run(["sudo", "iw", "dev", adapter, "set", "type", "monitor"], check=True)
+        subprocess.run(["sudo", "ip", "link", "set", adapter, "up"], check=True)
+        iw_output = run_command(f"iw dev {adapter} info")
+        if "type monitor" in iw_output:
+            log_activity(f"[+] {adapter} now in Monitor Mode")
+            return adapter
+        else:
+            log_activity(f"[!] Monitor mode not confirmed for {adapter}")
+            return None
+    except subprocess.CalledProcessError:
         log_activity(f"[!] Failed to enable Monitor Mode on {adapter}")
         return None
-    return adapter + "mon"
 
 def restore_adapter(adapter):
     subprocess.run(f"sudo ip link set {adapter} down", shell=True, stdout=subprocess.DEVNULL)
