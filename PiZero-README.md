@@ -121,7 +121,7 @@ This will list the capabilities of your adapters.
 Once the setup is complete, simply execute:
 
 ```bash
-sudo python3 Shadow_Bubble_Elite.py
+sudo python3 Shadow_Bubble_Mini.py
 ```
 
 The script will auto-detect available adapters, configure them, and start beacon + deauth + Bluetooth jamming based on availability.
