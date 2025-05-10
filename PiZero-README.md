@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide explains how to cleanly install `mdk4`, configure your Wi-Fi adapter region, and ensure the tool runs correctly on devices such as the **Raspberry Pi Zero 2 W**. These steps ensure optimal performance and compatibility with `Shadow Bubble ELITE`.
+This guide explains how to cleanly install `mdk4`, configure your Wi-Fi adapter region, and ensure the tool runs correctly on devices such as the **Raspberry Pi Zero 2 W**. These steps ensure optimal performance and compatibility with `Shadow Bubble Mini`.
 
 ---
 
